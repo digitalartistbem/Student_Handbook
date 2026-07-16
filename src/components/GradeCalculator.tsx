@@ -227,14 +227,14 @@ export default function GradeCalculator() {
                   </div>
                   <input
                     type="range"
-                    min="50"
+                    min="0"
                     max="100"
                     value={prelimPct}
                     onChange={(e) => setPrelimPct(parseInt(e.target.value))}
                     className="w-full accent-navy-600 h-2 bg-slate-100 rounded-lg cursor-pointer"
                   />
                   <div className="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
-                    <span>50% (Passing starts at 50% / 3.0)</span>
+                    <span>0% (Passing starts at 50% / 3.0)</span>
                     <span>100%</span>
                   </div>
                 </div>
@@ -251,14 +251,14 @@ export default function GradeCalculator() {
                   </div>
                   <input
                     type="range"
-                    min="50"
+                    min="0"
                     max="100"
                     value={midtermPct}
                     onChange={(e) => setMidtermPct(parseInt(e.target.value))}
                     className="w-full accent-navy-600 h-2 bg-slate-100 rounded-lg cursor-pointer"
                   />
                   <div className="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
-                    <span>50%</span>
+                    <span>0%</span>
                     <span>100%</span>
                   </div>
                 </div>
@@ -275,14 +275,14 @@ export default function GradeCalculator() {
                   </div>
                   <input
                     type="range"
-                    min="50"
+                    min="0"
                     max="100"
                     value={prefinalPct}
                     onChange={(e) => setPrefinalPct(parseInt(e.target.value))}
                     className="w-full accent-indigo-600 h-2 bg-slate-100 rounded-lg cursor-pointer"
                   />
                   <div className="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
-                    <span>50%</span>
+                    <span>0%</span>
                     <span>100%</span>
                   </div>
                 </div>
@@ -299,14 +299,14 @@ export default function GradeCalculator() {
                   </div>
                   <input
                     type="range"
-                    min="50"
+                    min="0"
                     max="100"
                     value={finalPct}
                     onChange={(e) => setFinalPct(parseInt(e.target.value))}
                     className="w-full accent-aclc-red h-2 bg-slate-100 rounded-lg cursor-pointer"
                   />
                   <div className="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
-                    <span>50%</span>
+                    <span>0%</span>
                     <span>100%</span>
                   </div>
                 </div>
