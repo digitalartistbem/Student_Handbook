@@ -269,25 +269,7 @@ export default function App() {
       {/* Main Container Workspace */}
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8 flex-1 w-full flex flex-col">
         
-        {/* Toggle Panel for Global App Modes */}
-        <div className="flex justify-center mb-6">
-          <div className="grid grid-cols-2 p-1.5 bg-slate-200/60 rounded-2xl w-full max-w-md shadow-inner">
-            <button
-              onClick={() => { setActiveTab('reader'); setSearchQuery(''); }}
-              className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${activeTab === 'reader' ? 'bg-white text-navy-800 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`}
-            >
-              <BookOpen className="w-4 h-4 text-navy-600" />
-              Handbook Content
-            </button>
-            <button
-              onClick={() => { setActiveTab('tools'); }}
-              className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${activeTab === 'tools' ? 'bg-white text-navy-800 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`}
-            >
-              <Calculator className="w-4 h-4 text-aclc-red" />
-              Interactive Tools
-            </button>
-          </div>
-        </div>
+
 
         {/* Tab view implementations */}
         <div className="flex-1 flex flex-col">
