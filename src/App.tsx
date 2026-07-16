@@ -155,20 +155,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-800 antialiased selection:bg-navy-200 selection:text-navy-900">
       
-      {/* Upper Announcement Bar */}
-      <div className="bg-gradient-to-r from-navy-800 to-navy-900 px-4 py-2 text-white border-b border-navy-700/50">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-[11px] font-mono tracking-wider">
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>OFFICIAL COMPANION SITE: ACLC COLLEGE</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <span>EDITION: REVISED 2015 STUDENT HANDBOOK</span>
-            <span className="hidden md:inline text-slate-400">VERSION 3.0</span>
-          </div>
-        </div>
-      </div>
-
       {/* Main App Navigation Header */}
       <header className="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
@@ -279,60 +265,6 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Hero Banner Section */}
-      <section className="bg-gradient-to-r from-navy-700 via-navy-800 to-navy-900 text-white relative overflow-hidden py-12 md:py-16 shrink-0">
-        <div className="absolute inset-0 opacity-15">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-aclc-red rounded-full filter blur-3xl -ml-20 -mt-20"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full filter blur-3xl -mr-20 -mb-20"></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-2xl">
-            <span className="bg-aclc-red/20 text-aclc-red border border-aclc-red/30 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest bg-red-950/40 text-red-300">
-              ACLC College Handbook Portal
-            </span>
-            <h2 className="font-display font-extrabold text-3xl md:text-4xl tracking-tight mt-3 text-white leading-tight">
-              Sleek, Dynamic, Client-Side Resource Center
-            </h2>
-            <p className="text-xs md:text-sm text-navy-100 mt-2 leading-relaxed max-w-xl">
-              Quickly browse, search, and navigate academic guidelines, disciplinary rules, and scholarship grants. Created to compile into a fast static site ready for immediate hosting on GitHub Pages with zero server backend.
-            </p>
-
-            {/* Quick action widgets / badges */}
-            <div className="flex flex-wrap gap-2 mt-6">
-              <button
-                onClick={() => navigateToSection('history', 'info')}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-white/15 border border-white/10 rounded-lg text-xs font-medium text-white transition-all cursor-pointer"
-              >
-                <Sparkles className="w-3.5 h-3.5 text-yellow-300" />
-                ACLC History
-              </button>
-              <button
-                onClick={() => navigateToSection('grading-system', 'grading')}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-white/15 border border-white/10 rounded-lg text-xs font-medium text-white transition-all cursor-pointer"
-              >
-                <Award className="w-3.5 h-3.5 text-yellow-300" />
-                Grading System
-              </button>
-              <button
-                onClick={() => navigateToSection('disciplinary-procedures', 'disciplinary')}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-white/15 border border-white/10 rounded-lg text-xs font-medium text-white transition-all cursor-pointer"
-              >
-                <Scale className="w-3.5 h-3.5 text-yellow-300" />
-                Disciplinary Policies
-              </button>
-              <button
-                onClick={() => navigateToSection('scholarship-list', 'scholarships')}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-white/15 border border-white/10 rounded-lg text-xs font-medium text-white transition-all cursor-pointer"
-              >
-                <GraduationCap className="w-3.5 h-3.5 text-yellow-300" />
-                Scholarships
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Main Container Workspace */}
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8 flex-1 w-full flex flex-col">
