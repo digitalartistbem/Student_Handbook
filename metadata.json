@@ -1,0 +1,6 @@
+{
+  "name": "ACLC Student Handbook",
+  "description": "An interactive, searchable, and fully offline-capable student handbook for ACLC College, featuring academic policies, grading tools, and scholarship calculators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

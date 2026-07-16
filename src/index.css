@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Indigo Scale mapping for Navy color tokens to achieve high-end Professional Polish */
+  --color-navy-50: #f5f3ff;   /* Indigo 50 */
+  --color-navy-100: #ede9fe;  /* Indigo 100 */
+  --color-navy-200: #ddd6fe;  /* Indigo 200 */
+  --color-navy-300: #c7d2fe;  /* Indigo 300 */
+  --color-navy-400: #818cf8;  /* Indigo 400 */
+  --color-navy-500: #6366f1;  /* Indigo 500 */
+  --color-navy-600: #4f46e5;  /* Indigo 600 (Primary accent) */
+  --color-navy-700: #4338ca;  /* Indigo 700 (Primary brand) */
+  --color-navy-800: #1e293b;  /* Slate 800 */
+  --color-navy-900: #0f172a;  /* Slate 900 (High contrast text) */
+  
+  --color-aclc-blue: #4338ca; /* Polished primary Indigo */
+  --color-aclc-red: #cc1e29;  /* Official ACLC Accent */
+}
+
+/* Custom scrollbars and transitions */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom highlight keyframes and focus animations */
+@keyframes pulse-highlight {
+  0%, 100% { background-color: rgba(253, 224, 71, 0.2); }
+  50% { background-color: rgba(253, 224, 71, 0.4); }
+}
+
+.animate-pulse-highlight {
+  animation: pulse-highlight 2s ease-in-out infinite;
+}
