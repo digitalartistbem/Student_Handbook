@@ -333,14 +333,6 @@ export default function App() {
                       );
                     })}
                   </nav>
-
-                  {/* Offline helper note */}
-                  <div className="bg-emerald-50/50 border border-emerald-100 rounded-xl p-3 mt-4 text-[10.5px] text-emerald-800 flex gap-2 items-start">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <div>
-                      <span className="font-bold">Offline Capable:</span> This handbook fits 100% client-side. No API or server dependency ensures instant search.
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -583,7 +575,7 @@ export default function App() {
               Disclaimer & License
             </h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              This digital companion is built directly based on the transcribed text of the **Revised 2015 Edition** of the ACLC Student Handbook. All rights, logos, and trademarks reside with ACLC College and the AMA Education System.
+              This digital companion is built directly based on the transcribed text of the <strong className="font-semibold text-slate-500">Revised 2015 Edition</strong> of the ACLC Student Handbook. All rights, logos, and trademarks reside with ACLC College and the AMA Education System.
             </p>
           </div>
 

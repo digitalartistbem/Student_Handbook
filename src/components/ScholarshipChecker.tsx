@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, CheckCircle, XCircle, FileText, Landmark, ShieldCheck, HelpCircle } from 'lucide-react';
+import { Award, CheckCircle, XCircle, FileText, Landmark, ShieldCheck, HelpCircle, Info } from 'lucide-react';
 import { handbookScholarships, Scholarship } from '../handbookData';
 
 export default function ScholarshipChecker() {
@@ -160,6 +160,14 @@ export default function ScholarshipChecker() {
             <h3 className="font-display font-semibold text-lg">Scholarship Eligibility Checker</h3>
             <p className="text-xs text-navy-100">Check if you qualify for tuition fee discounts and grants</p>
           </div>
+        </div>
+      </div>
+
+      {/* 2015 Handbook Disclaimer Banner */}
+      <div className="bg-amber-50 border-b border-amber-100 px-6 py-3 flex gap-2.5 items-start">
+        <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+        <div className="text-xs text-amber-800 leading-relaxed">
+          <span className="font-bold">2015 Handbook Version Notice:</span> The criteria and rules evaluated in this checker are based on historical 2015 student handbook policies. For the latest updated scholarship programs, requirements, active slots, and direct applications, please consult with the school registrar or student affairs administration.
         </div>
       </div>
 
