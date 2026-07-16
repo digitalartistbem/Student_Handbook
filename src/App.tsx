@@ -349,6 +349,8 @@ export default function App() {
                             onClick={() => {
                               setActiveCategory(res.section.category);
                               setSelectedSectionId(res.section.id);
+                              setActiveTab('reader');
+                              setSearchQuery('');
                             }}
                             className="bg-slate-50/80 hover:bg-navy-50/40 p-4 rounded-xl border border-slate-200 hover:border-navy-200 transition-all cursor-pointer group"
                           >
