@@ -417,6 +417,79 @@ export default function App() {
                         {highlightText(activeSection.content, searchQuery)}
                       </div>
 
+                      {/* Interactive Tool Call-to-Actions */}
+                      {activeSection.id === 'disciplinary-procedures' && (
+                        <div className="bg-rose-50 border border-rose-100 p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                          <div className="space-y-1.5">
+                            <h4 className="text-xs font-bold text-rose-900 uppercase tracking-wider flex items-center gap-1.5">
+                              <Hammer className="w-4 h-4 text-rose-600" />
+                              Interactive Offense Directory
+                            </h4>
+                            <p className="text-xs text-rose-700 leading-relaxed">
+                              Need to quickly search specific offenses, violation categories, and see their exact sanctions? Use our interactive directory.
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => {
+                              setActiveTab('tools');
+                              setActiveTool('offense');
+                            }}
+                            className="bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs py-2.5 px-5 rounded-xl shadow-xs hover:shadow-md transition-all whitespace-nowrap cursor-pointer flex items-center gap-1.5 w-fit"
+                          >
+                            Open Offense Lookup
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      )}
+
+                      {activeSection.id === 'grading-system' && (
+                        <div className="bg-indigo-50 border border-indigo-100 p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                          <div className="space-y-1.5">
+                            <h4 className="text-xs font-bold text-indigo-900 uppercase tracking-wider flex items-center gap-1.5">
+                              <Calculator className="w-4 h-4 text-indigo-600" />
+                              Interactive Grade Estimator
+                            </h4>
+                            <p className="text-xs text-indigo-700 leading-relaxed">
+                              Calculate and estimate your final trimester grade using raw component scores or quick percentage weight ranges.
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => {
+                              setActiveTab('tools');
+                              setActiveTool('grade');
+                            }}
+                            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs py-2.5 px-5 rounded-xl shadow-xs hover:shadow-md transition-all whitespace-nowrap cursor-pointer flex items-center gap-1.5 w-fit"
+                          >
+                            Open Grade Estimator
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      )}
+
+                      {activeSection.id === 'scholarship-list' && (
+                        <div className="bg-emerald-50 border border-emerald-100 p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                          <div className="space-y-1.5">
+                            <h4 className="text-xs font-bold text-emerald-900 uppercase tracking-wider flex items-center gap-1.5">
+                              <GraduationCap className="w-4 h-4 text-emerald-600" />
+                              Scholarship Eligibility Checker
+                            </h4>
+                            <p className="text-xs text-emerald-700 leading-relaxed">
+                              Review your grades and household parameters instantly to assess your eligible handbook scholarship brackets.
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => {
+                              setActiveTab('tools');
+                              setActiveTool('scholarship');
+                            }}
+                            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 px-5 rounded-xl shadow-xs hover:shadow-md transition-all whitespace-nowrap cursor-pointer flex items-center gap-1.5 w-fit"
+                          >
+                            Check My Eligibility
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      )}
+
                       {/* Subsections rendering */}
                       {activeSection.subsections && activeSection.subsections.length > 0 && (
                         <div className="space-y-4 pt-4 border-t border-slate-200">
