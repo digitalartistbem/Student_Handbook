@@ -418,7 +418,7 @@ export default function App() {
                       </div>
 
                       {/* Interactive Tool Call-to-Actions */}
-                      {activeSection.id === 'disciplinary-procedures' && (
+                      {(activeSection.id === 'disciplinary-procedures' || activeSection.id === 'student-conduct') && (
                         <div className="bg-rose-50 border border-rose-100 p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                           <div className="space-y-1.5">
                             <h4 className="text-xs font-bold text-rose-900 uppercase tracking-wider flex items-center gap-1.5">
